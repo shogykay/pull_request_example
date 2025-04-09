@@ -23,4 +23,4 @@ def graph_rag(question):
         response = requests.post(getConfig()['GraphRag']["Url_local"], headers=headers, data=json_payload)
 
     # return json.loads(response.content.decode("utf-8"))['result']
-    return json.loads(response.content)
+    return json.loads(response.content ['result'])
